@@ -53,4 +53,44 @@ plt.title("Poiting of X & Y axis")
 plt.show()
 
 
+#Seabend
+import numpy as np
+import pandas as pd
+import matplotib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv(USAhousing.csv)
+
+print(df.head(10))
+
+print(df.info())
+
+print(df.columns())
+
+sns.pariplot(df.select_dtypes(include=[np.number])))
+
+sns.heatmap(df.select_dtypes(include=[np.number])).cor(), annot=True)
+
+plt.show()
+
+import pandas as pd
+import seaborn as sb
+from matpolib import pyplot as plt
+
+df = sb.load_database(johns_database)
+
+sb.jointplot(x = 'petal_length', y='petal_width', data = df)
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
 
