@@ -77,7 +77,7 @@ import pandas as pd
 import seaborn as sb
 from matpolib import pyplot as plt
 
-df = sb.load_database(johns_database)
+df = sb.load_database('iris')
 
 sb.jointplot(x = 'petal_length', y='petal_width', data = df)
 plt.show()
