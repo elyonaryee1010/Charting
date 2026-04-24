@@ -88,6 +88,66 @@ plt.show()
 
 
 
+#--Weather Data Visualization--
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.set(style="ticks")
+
+from google.colab import files
+uplaoded = files.upload()
+
+weather = pd.read_csv('Weather Dataset - Trial Activity DataSet.csv)
+import pandas as pd
+
+weather = pd.read_csv('Weather Dataset - Trial Activity DataSet.csv)
+print(weather.head()
+
+print(weather.head())
+
+sns.barplot(data=weather, x= 'weather_type', y='temperature')\
+plt.show()
+
+sns.histplot(data=weather, x= 'humidity', kde=True)
+plt.show()
+
+sns.histplot(data=weather, x= 'humidity', kde=False)
+sns.rugplot(data=weather, x='humidity')
+plt.show()
+
+sns.jointplot(data=weather, x='humidity', y='temperature')
+sns.jointplot(data=weather, x='humidity', y='temperature, kind="hex")
+sns.jointplot(data=weather, x= 'humidity', y='temeperature, kind="kde")
+
+sns.pairplot(weather[['humidity', 'temperature', 'air_pollution_index')
+sns.stripplot(data=weather, x='weather_type', y='temperature')
+plt.show()
+
+sns.stripplot(data=weather, x='weather_type', y='temeprature', jitter=True)
+plt.show()
+
+sns.swarmplot(data=weather, x='weather_type', y='temperature')
+plt.show
+
+sns.barplot(data=weather, x='weather_type', y='temperature', hue='weather_type')
+plt.show()
+
+sns.countplot(data=weather, x= 'weather_type')
+plt.show()
+
+sns.pointplot(data=weather, x='weather_type', y='temperature', hue='weather_type)
+plt.show()
+
+
+
+
+
+
+
+
+
+
 
 
 
