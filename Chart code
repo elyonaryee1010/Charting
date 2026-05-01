@@ -224,7 +224,11 @@ df.head(10)
 df.isnull().sum()
 df.isnull().any()
 
-sns.heatmap(x='vaccinations', y='country')
+subset = df.iloc[:5200, :]
+plt.figure(figsize=12,8))
+sns.heatmap(subset.isnull(), cbar=False, cmap='virsis')
+
+df.head()
 
 
 
