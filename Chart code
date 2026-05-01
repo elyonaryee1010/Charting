@@ -204,8 +204,75 @@ plt.show()
 sns.countplot(data=df, x='island' hue='species')
 plt.show()
 
-sns.pairplot(data=df, hue'species')
+sns.pairplot(data=df, hue='species')
 plt.show()
+
+
+
+
+import numpy as np 
+import pandas as pd
+import matplotlib.plt as plyt
+import seaborn as sns
+
+df = read_csv("country_vaccinations.csv")
+
+df.info()
+
+df.head(10)
+
+df.isnull().sum()
+df.isnull().any()
+
+sns.heatmap(x='vaccinations', y='country')
+
+
+
+sns.boxplot(x='vaccinations', y='country')
+plt.show()
+
+sns.pairplot(x='vaccinations', y='country', hue="date")
+plt.show()
+
+
+
+
+df.dropna(how='all')
+df.fillna(method = 'bfill')
+
+
+
+
+df.interpolate()
+
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+subset = df.iloc[:5200, ;]
+plt.figure(figsize=912,8))
+sns.heatmap(subset.isnull(), cbar=False, cmap="virdis')
+
+df.head()
 
 
 
