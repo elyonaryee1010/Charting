@@ -245,7 +245,10 @@ df.fillna(method = 'bfill')
 
 df.interpolate()
 
+df_drop = dropna()
+
 plt.show()
+
 
 
 
