@@ -260,11 +260,19 @@ plt.show()
 
 #Visulation with data science ii
 import matplotlib.plyt plt
+x=[0,5,10,15,20,25,30]
+y1=[10,15,20,20,30,15,0]
 
-plt.plot(x,y,marker='o', color='red')
+plt.plot(x,y1,linestyle='dashed',marker='o', color='red')
+plt.plot(x,y2, linestyle='dashed',marker='o', color='red')
+
 plt.title(Visulation with Data Science II)
 plt.xlabel("Data")
 plt.ylabel("Science")
+plt.xlim(5,25)
+plt.ylim(5,25)
+plt.legend()
+
 
 plt.show()
 
@@ -277,17 +285,20 @@ x=np.array(1,2,3,4,5,6,7,8,9)]
 x1 = [1,2,3,4,5]
 y2 = [3,2,6,4,5]
 
-y = x**2
+y1 = (2*x)+1
+y2=(2*x**x)+2
 
 
 
 
 
-plt.plot(x,y)
+plt.plot(x,y, 'g', linewidth=3, label='y=2x+1')
+plt.plot(x,y2, 'g', linewidth=3, label='y=2x^2+2_
 
 plt.title("Data Science")
 plt.xlabel("Data")
 plt.ylabel("Science")
+plt.legend()
 
 
 plt.show()
