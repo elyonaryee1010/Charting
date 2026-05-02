@@ -258,6 +258,132 @@ plt.show()
 
 
 
+#Visulation with data science ii
+import matplotlib.plyt plt
+
+plt.plot(x,y,marker='o', color='red')
+plt.title(Visulation with Data Science II)
+plt.xlabel("Data")
+plt.ylabel("Science")
+
+plt.show()
+
+#visualization with data science ii-activity2
+
+
+
+x=np.array(1,2,3,4,5,6,7,8,9)]
+
+x1 = [1,2,3,4,5]
+y2 = [3,2,6,4,5]
+
+y = x**2
+
+
+
+
+
+plt.plot(x,y)
+
+plt.title("Data Science")
+plt.xlabel("Data")
+plt.ylabel("Science")
+
+
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=[]
+y=[]
+plt.plot(x,y,linestyle='dahsed, maerker=D
+
+Y1=(2*X)+1
+Y2=(2X*XXXX)+2
+LINEWIDTH=3, Label =y=2x^2+2')
+
+
+
 
 
 
