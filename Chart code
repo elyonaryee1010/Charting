@@ -466,6 +466,27 @@ LINEWIDTH=3, Label =y=2x^2+2')
 
 
 
+import matplotlib.pylot as plt
+
+blood_sugar_men = [113,85,90,150,140,180,167,154];
+blood_sugar_women = [67,98,65,78];
+
+type = [blood_sugar_men, blood_sugar_women];
+colors =['green', 'red'];
+label = [];
+bins=[0,1,2,3,4,5,6,7,8,9,10]
+
+plt.subplots(figszie=(10,5))
+plt.hist(type,color,bins=bins,label=label,width=0.90,oriention="vertical"))
+plt.title("Blood Sugar of Different Genders")
+plt.xlabel("Blood Sugar of Men")
+plt.ylabel("Blood Sugar of Women")
+
+plt.legend()
+plt.show()
+
+
+
 
 
 
