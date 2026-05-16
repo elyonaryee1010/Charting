@@ -505,12 +505,18 @@ plt.scatter(x,y,c='red',edgecolor='red',linewidth=0.9,cmap=None, hue="chol",mark
 plt.hist(data=df,x="Age",y="bpm")
 plt.lineplot(data=df,x="Sex", y="Age")
 plt.boxplot(data=df,x="chol", y="fbs")
-plt.countplot(data=df,x="Age", y="Sex").
+plt.countplot(data=df,x="Age", y="Sex")
+
+plt.figure(figsize(20,10))
+sns.heatmap(df.corr(), annot=True,cmap='terrain')
+
 plt.figure(figsize =(5,2))
 plt.title("Heart.csv")
 plt.ylabel("Age")
 plt.legend()
 plt.show()
+
+
 
 
 
