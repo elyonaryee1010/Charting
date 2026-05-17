@@ -374,8 +374,47 @@ plt.bar(countries,values,color='red', width='100')
 
 plt.title("Population growth
 
+#-Statistics 1
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+from google.colab import files
+uploaded = files.upload()
 
+file_name = list(uplodaded.keys()[0]
+data = pd.reac_csv(file_name)
+
+print(data.head())
+
+mean_age = data['Age'].mean()
+print("\nMean Age of Passengers:", mean_age)
+
+mean_fare = data['Fare'].mean()
+print("Mean Fare:", mean_fare)
+
+median_age = np.median(data['Age'].dropna())
+print("Median value of Age =", median_age)
+median_fare = np.median(data['Fare'])
+print("Median value of are=", median_fare)
+
+mode_age = stats.mode(data['Age'].dropna())
+print("Mode value of Age", mode_age)
+mode_class = stats.mode(data['Pclass'])
+print("Mode values of PClass-", mode_class)
+
+mode_gender = data['Gender'].mode()[0]
+print("Mode of Feature Gender-", mode_gender)
+
+mean_age = np.mean(data['Age'].mean())
+print("Mean:", mean_age)
+
+mean_fare = np.mean(data['Fare'].mean())
+print("Mean:", mean_age)
+
+mean_gender= np.mean(data['Gender'].mean())
+print("Mean:", mean_age)
 
 
 
