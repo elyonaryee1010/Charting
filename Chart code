@@ -555,6 +555,74 @@ plt.ylabel("Age")
 plt.legend()
 plt.show()
 
+#--Statistic - Part 2
+import seaborn as sns
+import matplotlib.pylt as plt
+import numpy as np
+
+data = pd.read_csv('iris')
+
+data.head(5)
+data.info()
+
+data.isnull().sum()
+
+mean_temp = mp.mean(data['Temperature(c)'])
+print("Mean Temperature:", mean_temp)
+var_temp = np.var(data['Temperature(C)'])
+print("Variation of Temperatures:", var_temp)
+standard_deviation_temp = np.std(data['Temperature (C)'])
+print("Standard Deviation Temperature:", standard_deviation_temp)
+
+for i in range(1,13)
+month = data.loc[data["month"] == i]["Temperature(c)"]
+print("For month"+str(i))
+print("Mean temperature is"+str(np.mean(month)))
+print("Standard deviation is"+str(np.std(month)+"\n")
+
+
+
+
+
+plt.show()
+
+#-IMDB Dataset
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+data = pd.read_csv(data)
+
+data.head()
+data.info()
+
+mean = np.mean(data['IMDB']).mean()
+print("Mean:", mean)
+
+median = np.media(data['IMDB']).median()
+print("Median:", median)
+
+mode = np.mode(data['IMDB']).mode()
+print("Mode:", mode)
+
+std = np.std("data['IMDB'])
+print("STD:", std)
+
+var_movie = np.var(data['IMDB'])
+print("Variation of Movies", var_movie)
+
+data.isnull().sum()
+
+plt.title("IMDB Movie Dataset")
+plt.show()
+
+
+
+
+
+
+
+
 
 
 
