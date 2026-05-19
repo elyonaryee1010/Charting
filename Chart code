@@ -595,6 +595,9 @@ data = pd.read_csv(data)
 
 data.head()
 data.info()
+data.columns()
+data.shape()
+df.describe()
 
 mean = np.mean(data['IMDB']).mean()
 print("Mean:", mean)
@@ -611,9 +614,15 @@ print("STD:", std)
 var_movie = np.var(data['IMDB'])
 print("Variation of Movies", var_movie)
 
+
 data.isnull().sum()
 
 plt.title("IMDB Movie Dataset")
+sns.histograms(data['IMDB'],color='red',edgecolor='black',bins=bins)
+sns.lineplot(data['IMDB'],color='green',edgecolor='red',bins=bins)
+sns.pairplot(data['IMDB'],color='black',edgecolor='purple',bins=bins)
+
+
 plt.show()
 
 
