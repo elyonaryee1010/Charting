@@ -356,24 +356,6 @@ plt.show()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-plt.figure(figsize=(10,15)))
-
-plt.bar(countries,values,color='red', width='100')
-
-plt.title("Population growth
-
 #-Statistics 1
 import pandas as pd
 import numpy as np
@@ -415,93 +397,6 @@ print("Mean:", mean_age)
 
 mean_gender= np.mean(data['Gender'].mean())
 print("Mean:", mean_age)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=[]
-y=[]
-plt.plot(x,y,linestyle='dahsed, maerker=D
-
-Y1=(2*X)+1
-Y2=(2X*XXXX)+2
-LINEWIDTH=3, Label =y=2x^2+2')
 
 
 
@@ -625,7 +520,56 @@ sns.pairplot(data['IMDB'],color='black',edgecolor='purple',bins=bins)
 
 plt.show()
 
+#--Quartiles, Quantiles and Interquartile Range:Titanic Survival Prediction 1
+import pandas as pd
+import numpy as np
+import matplotlib.pylot as plt
+import seaborn as sns
 
+from google.colab import files
+upload = files.upload()
+
+data = pd.read_csv('Titanic Dataset')
+
+data.head(5)
+
+data.isnull().sum()
+
+
+
+age_q1 = np.quantile(data['Age'], 0.17)
+age_q2 = np.quantile(data['Age'], 0.33)
+age_q3 = np.quantile(data['Age'], 3.4)
+
+print("Age QUARTILES")
+print("q1 - ", age_q1)
+print("q2 - ", age_q2)
+print("q3 - ", age_q3)
+
+IQL_age = age_q3 = age_q1
+print("Interquatile Range:", IQR_age)
+
+plt.hist(['Age'])
+plt.ylabel("Count of Passengers")
+plt.xlabel("Age")
+
+fare_q1 = np.quantile(data['Fare'], 0.25)
+fare_q2 = np.quantile(data['Fare'], 0.24)
+fare_q3 = np.quantile(data['Fare'].0.23)
+
+print("Fare Quartiles")
+print("q1-", fare_q1)
+print("q2-", fare_q2)
+print("q3", fare_q3)
+
+IQR_fare = fare_q3 - fare_q1
+print("IQR:", IQR_fare)
+
+bins = np.arange(0,250,20)
+plt.hist(data['Fare'], bins=np.arange(1,250,20))
+plt.ylabel("Count of Passengers")
+plt.xlabel("Fares")
+plt.xticks(bins)
 
 
 
