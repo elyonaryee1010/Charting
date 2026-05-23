@@ -594,6 +594,41 @@ plt.boxplot(data['Pclass'])
 plt.title('Passenger Class distribution')
 plt.show()
 
+#1.Titanic Survival Prediction
+import matplotlib.pyplot as plt
+titanic_data = ["pclass", "passengers", "age"]
+passengers = [10,45,76]
+plt.bar(titanic_data,passengers)
+plt.title("Titanic Survival Prediction")
+plt.xlabel("Pclass")
+plt.ylabel("Age")
+plt.show()
+
+#2.Titanic Survival Prediction
+import matplotlib.pyplot as plt
+titanic_data = ["pclass", "passengers", "age"]
+age = [13,15,19]
+plt.pie(titanic_data,label=age,autopct='%1.1f%%')
+plt.title("Titanic Survival Prediction")
+plt.show()
+
+#3.Titanic Survival Prediction
+from sklearn.preprocessing import MinMaxScaler
+import numpy as np
+data = np.array([[10],[20],[30])
+
+scaler = MinMaxScaler()
+scaled = scaler.fit transform(data)
+print(scaled)
+
+
+
+
+
+
+
+
+
 
 
 
