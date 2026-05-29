@@ -622,6 +622,44 @@ scaled = scaler.fit transform(data)
 print(scaled)
 
 
+#Advanced Data Transformation and Associa...
+import seaborn as sns
+import matplotlib.plt as pylot
+imprt seaborn as sns
+
+data = df.read_csv()
+
+data.head(5)
+
+minimum_age = data['Age'0.min()
+print('Maximum Age:', minimum_age)
+
+maximum_age = data['Age'].max()
+print('Maximum Age:', maximum_age)
+
+bins = [0,15,30,45,60,75]
+
+data['binned_age'] = pd.cut(data['Age'])
+age_labels = ['Young', 'Old']
+
+data['binned_age'] = pd.cut(data['Age'],bins)
+print(data[['binned_age', 'Age']].head())
+
+data[binned_age'] = pd.cut(data['Age'],bins,labels)
+
+plt.title()
+plt.xlabel()
+plt.ylabel()
+
+labels = ['PassengerId', 'Survived', 'Pclass', 'Age']
+for label in labels:
+    print('Distributtution',label)
+sns.displot(data[label])
+plt.show()
+print('Skew-', data[label].skew())
+
+data['log_SibSp'] np.log(data['SibSp'])
+data['log_parch'[ = np.log(data['Parch'])
 
 
 
