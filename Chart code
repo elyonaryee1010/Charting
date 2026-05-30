@@ -661,8 +661,69 @@ print('Skew-', data[label].skew())
 data['log_SibSp'] np.log(data['SibSp'])
 data['log_parch'[ = np.log(data['Parch'])
 
+#Exploratory data Analysis
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+data = pd.read_csv('Titanic Dataset.csv')
 
+data.head(5)
+
+sns.countplot(data['Gender'], hue=data['Survived'])
+
+sns.countplot(data['Pclass'], hue=data['Survived'])
+
+sns.pariplot(data['Gender'], hue=datap'Survived'],palette='winter'])
+plt.show()
+
+#Explatory Data Analysis
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklean.datasets import load_iris
+
+iris = load_iris()
+
+df = = pd.DataFrame(iris.data, columns=iris.feature_names)
+df['species'] = iris.target
+df['species'] = df['specues'].map()
+    0: 'setosa',
+    1: 'versicolor',
+    2:'virginica'
+})
+
+df.head()
+df.info()
+df.isnull().sum()
+sns.countplot(data['SepalLengthCm'], x='PetalLengthCm', y='PetalWidthCm')
+sns.heatmap(
+    df.drop('species', axis=1).corr(),
+    annot = True,
+    cmap = 'coolwarm'
+)
+plt.title(Iris Dataset.csv)
+plt.xlabel("SepalLengthCm")
+plt.ylabel("PetalWidthCm")
+plt.show()
+
+plt.hist(figsize(12,5))
+plt.xlabel("Species")
+plt.ylabel("PetalWidthCm")
+plt.show()
+
+plt.pairplot(y = data['Species'], hue=data['PetalWidth'], edgecolor='black', color='r')
+plt.xlabel("SepalLengthCm")
+plt.ylabel("Species")
+plt.show()
+
+plt.subplot(figize=(12,5))
+plt.boxplot(y=data['PetalWidth'], cmap = none,palette='winter', hue='PetalLengthCm')
+plt.xlabel("Id")
+plt.ylabel("Species")
+plt.show()
 
 
 
