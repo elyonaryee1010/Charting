@@ -725,6 +725,22 @@ plt.xlabel("Id")
 plt.ylabel("Species")
 plt.show()
 
+==Probability==
+def pick_ball_experiment():
+    balls = ['Red', 'Blue', 'Orange', 'Grey', 'Pink']
+
+result = random.choice(balls)
+
+pro = balls.count('red')/len(balls)
+print("Probability of Picking Red Ball")
+
+if result == 'Red':
+    return 'Red Ball was Picked'
+else:
+    return 'Better Luck Next Time'
+    
+    print(pick_ball_experiment)
+
 
 
 
